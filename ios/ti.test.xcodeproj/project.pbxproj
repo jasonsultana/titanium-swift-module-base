@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DB24E03C20766AC90033B2B1 /* TiTestExampleProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E03B20766AC90033B2B1 /* TiTestExampleProxy.swift */; };
-		DB34CDE0207B998A005F8E8C /* TiTestModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiTestModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiTestModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiTestModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34CDE5207B9EBD005F8E8C /* Foundation.framework */; };
 		DB52E2401E9CCF8D00AAAEE0 /* TiTest_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DB52E23F1E9CCF8D00AAAEE0 /* TiTest_Prefix.pch */; };
 		DB52E2431E9CD0F800AAAEE0 /* TiTestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52E2421E9CD0F800AAAEE0 /* TiTestModule.swift */; };
 		DB73EFEA2110E7450075A42A /* TitaniumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB73EFE72110E72C0075A42A /* TitaniumKit.framework */; };
 		DB75E5161E9CD59000809B2D /* TiTest.h in Headers */ = {isa = PBXBuildFile; fileRef = DB75E5151E9CD58100809B2D /* TiTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBA932A22111916500AABF94 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA932A02111916500AABF94 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +22,6 @@
 			containerPortal = DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DB258CCD1F09757E000D0D8D;
-			remoteInfo = TitaniumKit;
-		};
-		DB73EFE82110E73F0075A42A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DB258CCC1F09757E000D0D8D;
 			remoteInfo = TitaniumKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -47,7 +38,6 @@
 		DB52E2421E9CD0F800AAAEE0 /* TiTestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiTestModule.swift; path = Classes/TiTestModule.swift; sourceTree = "<group>"; };
 		DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TitaniumKit.xcodeproj; path = "../../../../Library/Application Support/Titanium/mobilesdk/osx/8.0.0/iphone/TitaniumKit/TitaniumKit.xcodeproj"; sourceTree = "<group>"; };
 		DB75E5151E9CD58100809B2D /* TiTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TiTest.h; path = Classes/TiTest.h; sourceTree = "<group>"; };
-		DBA932A02111916500AABF94 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = platform/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
-				DBA932A22111916500AABF94 /* Alamofire.framework in Frameworks */,
 				DB73EFEA2110E7450075A42A /* TitaniumKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +78,6 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBA932A02111916500AABF94 /* Alamofire.framework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -158,7 +146,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DB73EFE92110E73F0075A42A /* PBXTargetDependency */,
 			);
 			name = TiTest;
 			productName = TiTest;
@@ -171,21 +158,22 @@
 		DB52E2211E9CCD7000AAAEE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1120;
 				TargetAttributes = {
 					DB52E2291E9CCD7000AAAEE0 = {
 						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = DB52E2241E9CCD7000AAAEE0 /* Build configuration list for PBXProject "ti.test" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DB52E2201E9CCD7000AAAEE0;
 			productRefGroup = DB52E22B1E9CCD7000AAAEE0 /* Products */;
@@ -229,20 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB24E03C20766AC90033B2B1 /* TiTestExampleProxy.swift in Sources */,
-				DB34CDE0207B998A005F8E8C /* TiTestModuleAssets.m in Sources */,
 				DB52E2431E9CD0F800AAAEE0 /* TiTestModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DB73EFE92110E73F0075A42A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TitaniumKit;
-			targetProxy = DB73EFE82110E73F0075A42A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DB52E2301E9CCD7000AAAEE0 /* Debug */ = {
@@ -251,21 +230,30 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -291,14 +279,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				TITANIUM_SDK = "/Users/appceleratordeveloper/Library/Application Support/Titanium/mobilesdk/osx/8.3.1.GA";
+				TITANIUM_SDK_VERSION = 8.3.1.GA;
+				VALID_ARCHS = "$(ARCHS_STANDARD) armv7, arm64, i386, x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -310,21 +300,30 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -344,14 +343,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TITANIUM_SDK = "/Users/appceleratordeveloper/Library/Application Support/Titanium/mobilesdk/osx/8.3.1.GA";
+				TITANIUM_SDK_VERSION = 8.3.1.GA;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = "$(ARCHS_STANDARD) armv7, arm64, i386, x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -361,7 +362,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB52E2411E9CD09900AAAEE0 /* titanium.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -381,7 +381,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,8 +401,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				SWIFT_VERSION = 5.0;
+				TITANIUM_SDK_VERSION = 8.3.1.GA;
+				VALID_ARCHS = "armv7, arm64, i386, x86_64 $(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -410,7 +411,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB52E2411E9CD09900AAAEE0 /* titanium.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -429,7 +429,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,8 +445,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				SWIFT_VERSION = 5.0;
+				TITANIUM_SDK_VERSION = 8.3.1.GA;
+				VALID_ARCHS = "armv7, arm64, i386, x86_64 $(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};

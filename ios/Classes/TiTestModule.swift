@@ -6,7 +6,6 @@
 //  Copyright (c) 2018 Your Company. All rights reserved.
 //
 
-import Alamofire
 import UIKit
 import TitaniumKit
 
@@ -26,33 +25,28 @@ import TitaniumKit
 
 @objc(TiTestModule)
 class TiTestModule: TiModule {
-
-  public let testProperty: String = "Hello World"
+    @objc(testproperty)
+    public let testProperty: String = "Success!"
   
-  func moduleGUID() -> String {
-    return "fc6e6a45-71e7-40a0-9d54-4d8c65e16b91"
-  }
-  
-  override func moduleId() -> String! {
-    return "ti.test"
-  }
-
-  override func startup() {
-    super.startup()
-    debugPrint("[DEBUG] \(self) loaded")
-  }
-
-  @objc(post:)
-  func post(args: [Any]?) {
-    guard let args = args,
-          let url = args[0] as? String,
-          let callback = args[1] as? KrollCallback else { fatalError("Invalid parameters provided!") }
-
-    Alamofire.request(URL(string: url)!).response { response in
-      guard let response = response.data else { return }
-      let responseText = String(data: response, encoding: .utf8)
-
-      callback.call([["responseText": responseText]], thisObject: self)
+    func moduleGUID() -> String {
+        return "fc6e6a45-71e7-40a0-9d54-4d8c65e16b91"
     }
-  }
+  
+    override func moduleId() -> String! {
+        return "ti.test"
+    }
+
+    override func startup() {
+        super.startup()
+        debugPrint("[DEBUG] \(self) loaded")
+    }
+    
+    @objc(post:)
+    func post(args: [Any]?) {
+      print("post called")
+      debugPrint("post called")
+        
+      let apiModule = APIModule()
+      apiModule.info("POST CALLED!")
+    }
 }
