@@ -25,8 +25,8 @@ import TitaniumKit
 
 @objc(TiTestModule)
 class TiTestModule: TiModule {
-    @objc(testproperty)
-    public let testProperty: String = "Success!"
+    @objc(testProperty)
+    public let testProperty: String = "test property from swift"
   
     func moduleGUID() -> String {
         return "fc6e6a45-71e7-40a0-9d54-4d8c65e16b91"
@@ -41,12 +41,11 @@ class TiTestModule: TiModule {
         debugPrint("[DEBUG] \(self) loaded")
     }
     
-    @objc(post:)
-    func post(args: [Any]?) {
-      print("post called")
-      debugPrint("post called")
+    @objc(testFunction:)
+    func testFunction(args: [Any]?) -> String {
+        let apiModule = APIModule()
+        apiModule.info("TEST FUNCTION CALLED!")
         
-      let apiModule = APIModule()
-      apiModule.info("POST CALLED!")
+        return "test function result"
     }
 }
