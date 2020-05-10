@@ -2,31 +2,37 @@
 
 This is an example project that uses pure Swift modules in Titanium. Both the module
 and it's dependencies are 100 % Swift and do not require any additional setup / linking
-anymore.
+anymore. This is a slightly modified, updated version of https://github.com/hansemannn/titanium-swift-module-example,
+with `Alamofire` removed.
 
-It is using the #1 Swift Networking Library `Alamofire` with only three lines of code. More examples like SwiftyJSON or RxSwift are coming over the next weekens and months. 
+## What do I need to change?
 
-> ⚠️ Warning: This project is not ready for production, yet. It will be part
-> of Titanium SDK 8.0.0+.
+There are a couple of things that you'll need to change in this project in order to get it to work for you.
 
-## General Challenges
+### manifest
 
-- [x] Titanium used Objective-C static libraries to export module before, Swift only uses frameworks.
-- [x] The module project used Xcode Configuration (.xcconfig) files to inject the header search paths
-- [x] Swift frameworks require modular framework references (module-maps)
-- [x] The Titanium API loads native module by `require`'ing them. Not sure if the .framework files will even be directly recongnized by the SDK
-- [x] Embedded framework-dependencies need to be linked properly
+* You may want to change the version 
+* If your XCode project targets specific architectures, you'll need to update the architectures.
+* Description, author, licence and copyright should be updated so that they're relative to your project.
+* name, moduleid, guid, platform and minsdk should also be updated to suit your project.
 
-## Open issues
+### titanium.xcconfig
 
-None!
+* Update `TITANIUM_SDK_VERSION` to the version you're targeting.
+* Update `TITANIUM_SDK` to reflect your own titanium installation path.
+
+## How do I build this?
+
+* First open the xcodeproj file and try building in XCode with `Command + B`. I suggest doing this first since XCode may give you more context in case you do encounter any build errors.
+* Open a terminal at `<module_directory>/ios` and run `appc run -p ios --build-only`. This will produce a `build` folder if it's not already there, and place a .zip inside a `dist` folder. 
+* Double-click the .zip and copy the resulting `<module-name>` folder into the `/modules` folder of your project. If replacing an existing version of the same module, you'll want to run `appc ti clean` in your project before running it.
+* If you do encounter errors while building this module with appc (but XCode builds fine), try running `appc ti clean` within the ios folder.
 
 ## License
 
 MIT
 
-## Author
+## Authors
 
+Jason Sultana
 Hans Knöchel
-
-Code Strong! :rocket:
